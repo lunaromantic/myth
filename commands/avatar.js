@@ -3,8 +3,17 @@ module.exports = {
     description: "Show your avatar-- or someone else's.",
     aliases: ['pfp', 'icon'],
     execute(message){
+        const yourAvatar = {
+            color: "#ff99ff",
+            title: `Your Avatar`,
+            image: {
+                url: message.author.displayAvatarURL({ format: "png", dynamic: true})
+            },
+            timestamp: Date.now()
+        }
+
         if (!message.mentions.users.size) {
-            return message.channel.send(`Your avatar: ${message.author.displayAvatarURL({ format: "png", dynamic: true})}`)
+            return message.channel.send({embed: yourAvatar})
         }
 
         const avatarList = message.mentions.users.map(user => {
