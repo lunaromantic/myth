@@ -4,7 +4,7 @@ module.exports = {
     args: true,
     execute(message, args) {
         let taggedUser = message.mentions.users.first()
-        const randomNumber = Math.floor(Math.random() * 4) + 1
+        const randomNumber = Math.floor(Math.random() * 5) + 1
 
         console.log(randomNumber)
         const embed = {
