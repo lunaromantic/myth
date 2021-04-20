@@ -10,8 +10,7 @@ module.exports = {
         const embed = {
             title: `${message.author.username} has hugged ${taggedUser.username}!`,
             image: {
-                files: `../data/bot-images/hug-gifs/${randomNumber}.gif`,
-                url: `attachment://${randomNumber}.gif`
+                url: `https://raw.githubusercontent.com/lunaromantic/myth/main/data/bot-images/hug-gifs/${randomNumber}.gif`
             }
         }
 
