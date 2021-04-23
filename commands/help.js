@@ -7,7 +7,7 @@ module.exports = {
         const embed = {
             color: 0xff99ff,
             title: 'MythBot :: Need help?',
-            description: '**Information**\n`avatar`, `server` \n \n **Fun** \n `cat`, `dog`, `fox`, `urban-dictionary`' ,
+            description: '**Information**\n`avatar`, `server`, `user-info` \n \n **Fun** \n `cat`, `dog`, `fox`, `urban-dictionary` \n \n **ToonTown Rewritten** \n `gags <gag-name>` \n \n **Roleplay** \n `hug`' ,
 
             timestamp: new Date(),
             footer: {
