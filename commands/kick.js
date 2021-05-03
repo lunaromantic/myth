@@ -10,6 +10,8 @@ module.exports = {
         
         const taggedUser = message.mentions.users.first()
 
-        message.channel.send(`You wanted to kick ${taggedUser}, and failed! This is a fake command~`)
+        taggedUser.kick
+
+        message.channel.send(`${taggedUser} has been kicked from the server! They can come back using an invite link!`)
     },
 }
